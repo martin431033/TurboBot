@@ -36,7 +36,7 @@ var ti={}
 
 client.on('ready', function(){
     var ms = 60000 ;
-    var setGame = [`${client.guilds.size} Server`,'@Zee5#2700 help','Type @Zee5#2700 help',`${client.users.size} Members`,'@Zee5#2700 invite','By: Hosam | BaronTube'];
+    var setGame = [`${client.guilds.size} Server`,'#help','#help',`${client.users.size} Members`,''#invite','By: Mazen'];
     var i = -1;
     var j = 0;
     setInterval(function (){
