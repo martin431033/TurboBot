@@ -36,7 +36,7 @@ var ti={}
 
 client.on('ready', function(){
     var ms = 60000 ;
-    var setGame = [`${client.guilds.size} Server`,'#help','#help',`${client.users.size} Members`,''#invite','By: Mazen'];
+    var setGame = [`${client.guilds.size} Server`,'#help','#help',`${client.users.size} Members`,'#invite','By: Mazen'];
     var i = -1;
     var j = 0;
     setInterval(function (){
