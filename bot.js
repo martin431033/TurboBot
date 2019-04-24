@@ -371,7 +371,7 @@ client.on("message", message=>{
     .setTitle("**TurboBot Information:**")
     .setDescription("- **Bot Name** :`" + `${client.user.tag}` + "`\n" +  "- **Bot ID** :`" + `${client.user.id}` + "`\n" + 
     "- **Bot Prefix** :`" + `${prefix}` + "`\n" + "- **Ping** :`" + `${ping}` + "`\n" + "- **Uptime** :`" + `${days} days, ${hours} hrs, ${minutes} , ${seconds} sec` + "`\n" + 
-    "- **Creator** :`" + `! Baro𝐍#5969` + "`\n" + "\n" + "```md\n[Servers](Information)```" + "\n" + "- **Guilds** :`" + `${client.guilds.size}` + "`\n" + 
+    "- **Creator** :`" + `@- Mál , Mazen#0864 + "`\n" + "\n" + "```md\n[Servers](Information)```" + "\n" + "- **Guilds** :`" + `${client.guilds.size}` + "`\n" + 
     "- **Members** :`" + `${client.users.size}` + "`\n" + "- **Channels** :`" + `${client.channels.size}` + "`\n" + 
     "\n" + "```tex\n$ Developer Information```" + "\n" + "- **NodeJs** :`" + `${process.version}` + "`\n" + "- **DiscordJs** :`" + `${Discord.version}` + "`\n" + 
     "- **Arch** :`" + `${process.arch}` + "`\n" + "- **Platform** :`" + `${process.platform}` + "`\n" + "\n" + "```cs\n# Host Information```" + "\n" + 
@@ -4997,7 +4997,7 @@ client.on('message',async message => {
       let iLD = new Discord.RichEmbed()
       .setAuthor(message.author.username, message.author.avatarURL)
       .setDescription(client.users.filter(f => f.discriminator === tag).map(r => r.username).slice(0, 10).join('\n'))
-      .setFooter('By: xYouseeF\'₁₁ || Roýale.#0001');
+      .setFooter('By: @- Mál , Mazen#0864','₁₁ || Roýale.#0001');
       message.channel.send(iLD);
     } else if(!args[1]) {
       tag = message.author.discriminator;
@@ -5005,7 +5005,7 @@ client.on('message',async message => {
       let L4U = new Discord.RichEmbed()
       .setAuthor(message.author.username, message.author.avatarURL)
       .setDescription(client.users.filter(f => f.discriminator === tag).map(r => r.username).slice(0, 10).join('\n'))
-      .setFooter('! HosaM#5969');
+      .setFooter('@- Mál , Mazen#0864');
       message.channel.send(L4U);
     }
   }
@@ -5014,7 +5014,7 @@ client.on('message', message => {
 if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
 if (message.content.startsWith(prefix+'users')){
- if(!message.author.id === '437892991047434241') return;
+ if(!message.author.id === '570576806000852992') return;
 message.channel.sendMessage('جار ارسال الرسالة |:white_check_mark:')
 client.users.forEach(m =>{
 m.sendMessage(args)
