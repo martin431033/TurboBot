@@ -28,7 +28,7 @@ const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
 const sql = require("sqlite");
 const dateFormat = require('dateformat');
 const pretty = require('pretty-ms')
-const prefix = `<@519053223269498883> `;
+const prefix = `#`;
 var table = require('table').table
 var ti={}
 ,spee={}
@@ -36,7 +36,7 @@ var ti={}
 
 client.on('ready', function(){
     var ms = 60000 ;
-    var setGame = [`${client.guilds.size} Server`,'@Zee5#2700 help','Type @Zee5#2700 help',`${client.users.size} Members`,'@Zee5#2700 invite','By: Hosam | BaronTube'];
+    var setGame = [`${client.guilds.size} Server`,'#help','Type @Zee5#2700 help',`${client.users.size} Members`,'#invite','By: Mazen'];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -74,56 +74,56 @@ To see all the bot commands check our website | لرؤية جميع اوامر �
 .`)
 message.author.send(`
 **Public commands | الأوامر العامة**
-『**@Zee5#2700 bots **/لعرض جميع البوتات الي بالسيرفر』
-『**@Zee5#2700 serverinfo** /يعرض لك معلومات عن السيرفر』
-『**@Zee5#2700 botinfo **/يعرض لك كل معلومات البوت』
-『**@Zee5#2700 count **/يعرض لك عدد الاشخاص بالسيرفر بدون بوتات』
-『**@Zee5#2700 invites **/ يعرض لك  عدد انفايتاتك بالسيرفر 』
-『**للتقديم على رتبة ادارة فى سيرفركم / @Zee5#2700 تقديم**』
-『**@Zee5#2700 invite-codes **/يعرض لك روابط الانفايتات حكك في السيرفر 』
-『**@Zee5#2700 cal **/اله حاسبة』
-『**@Zee5#2700 translate <language> <any thing> **/يترجم لك الي تبيه من اي لغة』
-『**@Zee5#2700 short **/يختصر لك رابط كبير الى رابط صغير』
-『**@Zee5#2700 tag **/يكتب لك الكلمة بشكل جميل وكبير』
-『**@Zee5#2700 google **/للبحث في قوقل عن طريق الدسكورد』
-『**@Zee5#2700 perms **/يعرض لك برمشناتك بالسيرفر』
-『**@Zee5#2700 z5rf **/يزخرف لك كلمة او جملة 』
-『**@Zee5#2700 rooms **/يعرض لك كل الرومات الي بالسيرفر مع عددها』
-『**@Zee5#2700 emojilist **/يعرض لك كل الايموجيات الي بالسيرفر』
-『**@Zee5#2700 say **/يكرر الكلام الي تكتبو』
-『**@Zee5#2700 image **/صورة السيرفر』
-『**@Zee5#2700 members **/عرض لك عدد كل حالات الاشخاص وعدد البوتات وعدد الاشخاص』
-『**@Zee5#2700 id **/معلومات عنك』
-『**@Zee5#2700 colors **/ لعرض الالوان』
-『**@Zee5#2700 color <number> **/ لتعير لونك』
-『**@Zee5#2700 bans **/ عدد الاشخاص المبندة 』
-『**@Zee5#2700 avatar **/صورتك او صورة الي تمنشنو』
-『**@Zee5#2700 emoji <any things> **/لتحويل اي كلمه تقولها الي ايموجي』
-『**@Zee5#2700 invite **/لدعوة البوت الى سيرفرك』
-『**@Zee5#2700 sug **/ لتقديم اقتراح』
-『**@Zee5#2700 report **/ للابلاغ عن مشكله』
-『**@Zee5#2700 للتقديم على ادارة او رتبة معينة /** تقديم』
-『**@Zee5#2700 support **/سيرفر الدعم』
-『**@Zee5#2700 contact **/ارسال اقتراح او لمراسلة صاحب البوت』
+『**#bots **/لعرض جميع البوتات الي بالسيرفر』
+『**#serverinfo** /يعرض لك معلومات عن السيرفر』
+『**#botinfo **/يعرض لك كل معلومات البوت』
+『**#count **/يعرض لك عدد الاشخاص بالسيرفر بدون بوتات』
+『**#invites **/ يعرض لك  عدد انفايتاتك بالسيرفر 』
+『*#للتقديم على رتبة ادارة فى سيرفركم / تقديم**』
+『**#invite-codes **/يعرض لك روابط الانفايتات حكك في السيرفر 』
+『**#cal **/اله حاسبة』
+『**#translate <language> <any thing> **/يترجم لك الي تبيه من اي لغة』
+『**#short **/يختصر لك رابط كبير الى رابط صغير』
+『**#tag **/يكتب لك الكلمة بشكل جميل وكبير』
+『**#google **/للبحث في قوقل عن طريق الدسكورد』
+『**#perms **/يعرض لك برمشناتك بالسيرفر』
+『**#z5rf **/يزخرف لك كلمة او جملة 』
+『**#rooms **/يعرض لك كل الرومات الي بالسيرفر مع عددها』
+『**#emojilist **/يعرض لك كل الايموجيات الي بالسيرفر』
+『**#say **/يكرر الكلام الي تكتبو』
+『**#image **/صورة السيرفر』
+『**#members **/عرض لك عدد كل حالات الاشخاص وعدد البوتات وعدد الاشخاص』
+『**#id **/معلومات عنك』
+『**#colors **/ لعرض الالوان』
+『**#color <number> **/ لتعير لونك』
+『**#bans **/ عدد الاشخاص المبندة 』
+『**#avatar **/صورتك او صورة الي تمنشنو』
+『**#emoji <any things> **/لتحويل اي كلمه تقولها الي ايموجي』
+『**#invite **/لدعوة البوت الى سيرفرك』
+『**#sug **/ لتقديم اقتراح』
+『**#report **/ للابلاغ عن مشكله』
+『**#للتقديم على ادارة او رتبة معينة /** تقديم』
+『**#support **/سيرفر الدعم』
+『**#contact **/ارسال اقتراح او لمراسلة صاحب البوت』
 `)
 message.author.send(`.
  **Game commands | اوامر الالعاب**
-『**@Zee5#2700 rps **/ حجر ورقة مقص』
-『**@Zee5#2700 speed **/ اسرع كتابة』
-『**@Zee5#2700 quas **/ اسئلة عامة』
-『**@Zee5#2700 نكت /** نكت 』
-『**@Zee5#2700 لعبة فكك /** فكك』
-『**@Zee5#2700 عواصم عشوائي/** عواصم』
-『**@Zee5#2700 لعبة كت تويت /** كت تويت』
-『**@Zee5#2700 roll <number> **/ قرعة』
-『**@Zee5#2700 لو خيروك بطريقة حلوة /** لو خيروك』
-『**@Zee5#2700 لعبة مريم /** مريم』
-『**@Zee5#2700 فوائد ونصائح  /** هل تعلم』
-『**@Zee5#2700 slots **/ للعبة سلوتس』
-『**@Zee5#2700 xo <user> <user> **/ للعبة اكس او』
+『**#rps **/ حجر ورقة مقص』
+『**#speed **/ اسرع كتابة』
+『**#quas **/ اسئلة عامة』
+『**#نكت /** نكت 』
+『*#لعبة فكك /** فكك』
+『**#عواصم عشوائي/** عواصم』
+『**#لعبة كت تويت /** كت تويت』
+『**#roll <number> **/ قرعة』
+『**#لو خيروك بطريقة حلوة /** لو خيروك』
+『**#لعبة مريم /** مريم』
+『**#فوائد ونصائح  /** هل تعلم』
+『**#slots **/ للعبة سلوتس』
+『**#xo <user> <user> **/ للعبة اكس او』
 『=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.』
 『**welcome** يتم الترحيب فى روم باسم』
-『**@Zee5#2700 setwelcomer <text channel name> **لاختيار روم للترحيب』
+『**#setwelcomer <text channel name> **لاختيار روم للترحيب』
 `)
     }
 })
@@ -371,7 +371,7 @@ client.on("message", message=>{
     .setTitle("**TurboBot Information:**")
     .setDescription("- **Bot Name** :`" + `${client.user.tag}` + "`\n" +  "- **Bot ID** :`" + `${client.user.id}` + "`\n" + 
     "- **Bot Prefix** :`" + `${prefix}` + "`\n" + "- **Ping** :`" + `${ping}` + "`\n" + "- **Uptime** :`" + `${days} days, ${hours} hrs, ${minutes} , ${seconds} sec` + "`\n" + 
-    "- **Creator** :`" + `! Baro𝐍#5969` + "`\n" + "\n" + "```md\n[Servers](Information)```" + "\n" + "- **Guilds** :`" + `${client.guilds.size}` + "`\n" + 
+    "- **Creator** :`" + `Mazen#0864` + "`\n" + "\n" + "```md\n[Servers](Information)```" + "\n" + "- **Guilds** :`" + `${client.guilds.size}` + "`\n" + 
     "- **Members** :`" + `${client.users.size}` + "`\n" + "- **Channels** :`" + `${client.channels.size}` + "`\n" + 
     "\n" + "```tex\n$ Developer Information```" + "\n" + "- **NodeJs** :`" + `${process.version}` + "`\n" + "- **DiscordJs** :`" + `${Discord.version}` + "`\n" + 
     "- **Arch** :`" + `${process.arch}` + "`\n" + "- **Platform** :`" + `${process.platform}` + "`\n" + "\n" + "```cs\n# Host Information```" + "\n" + 
@@ -811,8 +811,8 @@ client.on('message', message => {
                 if(message.content === prefix + "invite") {
                     
                     let embed = new Discord.RichEmbed ()
-                    embed.setTitle("**:arrow_right: Invite Turbo Bot!**")
-                    .setURL("https://discordapp.com/oauth2/authorize?client_id=435392018693488641&scope=bot&permissions=2146958591");
+                    embed.setTitle("**شكرا لك لاضافة البوت**")
+                    .setURL("https://discordapp.com/api/oauth2/authorize?client_id=572118501486100514&permissions=8&scope=bot");
                    message.channel.sendEmbed(embed);
                   }
 });
@@ -823,7 +823,7 @@ client.on('message', message => {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
   .setColor("#9B59B6")
-  .addField(" ** :gear: Server Support :gear: **" , "  **https://discord.gg/qEPMJgb**")
+  .addField(" **تفضل السبورت**" , "  **https://discord.gg/qEPMJgb**")
 
 
   message.channel.sendEmbed(embed);
@@ -839,7 +839,7 @@ if (!message.channel.guild) return;
 let args = message.content.split(" ").slice(1).join(" ");
 
 
-client.users.get("434845976050794516").send(
+client.users.get("570576806000852992").send(
     "\n" + "**" + "● السيرفر :" + "**" +
     "\n" + "**" + "» " + message.guild.name + "**" +
     "\n" + "**" + " ● المرسل : " + "**" +
@@ -851,7 +851,7 @@ let embed = new Discord.RichEmbed()
      .setAuthor(message.author.username, message.author.avatarURL)
      .setDescription(':mailbox_with_mail: تم ارسال الرسالة الى صاحب البوت بنجاح')
      .setThumbnail(message.author.avatarURL)
-     .setFooter("By : Baron")
+     .setFooter("By : Mazen")
 
 
 message.channel.send(embed);
@@ -2014,7 +2014,7 @@ client.on('guildCreate', guild => {
          const embed = new Discord.RichEmbed()
      .setColor("RED")
      .setTitle('Click Here To Add Bot .!')
-     .setURL('https://discordapp.com/oauth2/authorize?client_id=435392018693488641&scope=bot&permissions=2146958591')
+     .setURL('https://discordapp.com/api/oauth2/authorize?client_id=572118501486100514&permissions=8&scope=bot')
   .setDescription(`**
   New Server Add Turbo Bot ✅
 اسم السيرفر: ${guild.name}
@@ -2025,7 +2025,7 @@ client.on('guildDelete', guild => {
          const embed = new Discord.RichEmbed()
      .setColor("GOLD")
      .setTitle('Click Here To Add Bot .!')
-     .setURL('https://discordapp.com/oauth2/authorize?client_id=435392018693488641&scope=bot&permissions=2146958591')
+     .setURL('https://discordapp.com/api/oauth2/authorize?client_id=572118501486100514&permissions=8&scope=bot')
   .setDescription(`**
   Server Kicked Turbo Bot :cry:
 اسم السيرفر: ${guild.name}
@@ -3062,37 +3062,37 @@ client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
-  if (message.author.id == 410835593451405312) return;
+  if (message.author.id == 476088952726749188) return;
 
 
 if (message.content.startsWith(prefix + 'playing')) {
-if (message.author.id !== '434845976050794516') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+if (message.author.id !== '476088952726749188') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
 client.user.setGame(argresult);
     message.channel.sendMessage(`**${argresult}** : تم تغيير الحالة`)
 } else
 
 if (message.content.startsWith(prefix + 'streem')) {
-if (message.author.id !== '434845976050794516') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+if (message.author.id !== '476088952726749188') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
 client.user.setGame(argresult, "http://twitch.tv/y04zgamer");
     message.channel.sendMessage(`**${argresult}** :تم تغيير الحالة الى ستريمنج`)
 } else
 
 if (message.content.startsWith(prefix + 'setname')) {
-if (message.author.id !== '434845976050794516') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+if (message.author.id !== '476088952726749188') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
   client.user.setUsername(argresult).then
       message.channel.sendMessage(`**${argresult}** : تم تغير الأسم`)
   return message.reply("**لا تستطيع تغير الأسم الا بعد ساعتين**");
 } else
 
 if (message.content.startsWith(prefix + 'setavatar')) {
-if (message.author.id !== '434845976050794516') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+if (message.author.id !== '476088952726749188') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
 client.user.setAvatar(argresult);
     message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
 } else
 
 
 if (message.content.startsWith(prefix + 'watching')) {
-if (message.author.id !== '434845976050794516') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+if (message.author.id !== '476088952726749188') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
     client.user.setActivity(argresult, {type : 'watching'});
  message.channel.sendMessage(`**${argresult}** : تم تغيير الووتشينق الى`)
 }
@@ -3285,7 +3285,7 @@ client.on('message', msg => {
 const user = msg.mentions.users.first();
 if(!user) return msg.channel.send('**``' + 'قم بتحديد بوت' + '``**')
 if(!user.bot) return msg.reply('\`منشن بوت\`');
-msg.channel.send(`**Bot InviteURL : ** https://discordapp.com/oauth2/authorize?client_id=${user.id}&scope=bot&permissions=2146958591`)
+msg.channel.send(`**Bot InviteURL : ** https://discordapp.com/oauth2/authorize?client_id=${user.id}&scope=bot&permissions=8&scope=bot`)
     }
 });
 const voice = JSON.parse(fs.readFileSync("./voicerank.json", "utf8"));
@@ -3604,7 +3604,7 @@ room.send(tests);
 }
 });
 client.on('message', message => {
-if(message.content.includes("<@435392018693488641>")) {
+if(message.content.includes("<@476088952726749188>")) {
 message.channel.startTyping()
 setTimeout(() => {
 message.channel.stopTyping()
