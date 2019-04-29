@@ -28,7 +28,7 @@ const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
 const sql = require("sqlite");
 const dateFormat = require('dateformat');
 const pretty = require('pretty-ms')
-const prefix = `#`;
+const prefix = `<@519053223269498883> `;
 var table = require('table').table
 var ti={}
 ,spee={}
@@ -36,7 +36,7 @@ var ti={}
 
 client.on('ready', function(){
     var ms = 60000 ;
-    var setGame = [`${client.guilds.size} Server`,'#help','#help',`${client.users.size} Members`,'#invite','By: Mazen'];
+    var setGame = [`${client.guilds.size} Server`,'@Zee5#2700 help','Type @Zee5#2700 help',`${client.users.size} Members`,'@Zee5#2700 invite','By: Hosam | BaronTube'];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -74,56 +74,56 @@ To see all the bot commands check our website | لرؤية جميع اوامر �
 .`)
 message.author.send(`
 **Public commands | الأوامر العامة**
-『**#bots **/لعرض جميع البوتات الي بالسيرفر』
-『**#serverinfo** /يعرض لك معلومات عن السيرفر』
-『**#botinfo **/يعرض لك كل معلومات البوت』
-『**#count **/يعرض لك عدد الاشخاص بالسيرفر بدون بوتات』
-『**#invites **/ يعرض لك  عدد انفايتاتك بالسيرفر 』
-『**للتقديم على رتبة ادارة فى سيرفركم /  #تقديم**』
-『**#invite-codes **/يعرض لك روابط الانفايتات حكك في السيرفر 』
-『**#cal **/اله حاسبة』
-『**#translate <language> <any thing> **/يترجم لك الي تبيه من اي لغة』
-『**#short **/يختصر لك رابط كبير الى رابط صغير』
-『**#tag **/يكتب لك الكلمة بشكل جميل وكبير』
-『**#google **/للبحث في قوقل عن طريق الدسكورد』
-『**#perms **/يعرض لك برمشناتك بالسيرفر』
-『**#z5rf **/يزخرف لك كلمة او جملة 』
-『**#rooms **/يعرض لك كل الرومات الي بالسيرفر مع عددها』
-『**#emojilist **/يعرض لك كل الايموجيات الي بالسيرفر』
-『**#say **/يكرر الكلام الي تكتبو』
-『**#image **/صورة السيرفر』
-『**#members **/عرض لك عدد كل حالات الاشخاص وعدد البوتات وعدد الاشخاص』
-『**#id **/معلومات عنك』
-『**#colors **/ لعرض الالوان』
-『**#color <number> **/ لتعير لونك』
-『**# bans **/ عدد الاشخاص المبندة 』
-『**#avatar **/صورتك او صورة الي تمنشنو』
-『**#emoji <any things> **/لتحويل اي كلمه تقولها الي ايموجي』
-『**#invite **/لدعوة البوت الى سيرفرك』
-『**#sug **/ لتقديم اقتراح』
-『**#report **/ للابلاغ عن مشكله』
-『**#للتقديم على ادارة او رتبة معينة /** تقديم』
-『**#support **/سيرفر الدعم』
-『**#contact **/ارسال اقتراح او لمراسلة صاحب البوت』
+『**@Zee5#2700 bots **/لعرض جميع البوتات الي بالسيرفر』
+『**@Zee5#2700 serverinfo** /يعرض لك معلومات عن السيرفر』
+『**@Zee5#2700 botinfo **/يعرض لك كل معلومات البوت』
+『**@Zee5#2700 count **/يعرض لك عدد الاشخاص بالسيرفر بدون بوتات』
+『**@Zee5#2700 invites **/ يعرض لك  عدد انفايتاتك بالسيرفر 』
+『**للتقديم على رتبة ادارة فى سيرفركم / @Zee5#2700 تقديم**』
+『**@Zee5#2700 invite-codes **/يعرض لك روابط الانفايتات حكك في السيرفر 』
+『**@Zee5#2700 cal **/اله حاسبة』
+『**@Zee5#2700 translate <language> <any thing> **/يترجم لك الي تبيه من اي لغة』
+『**@Zee5#2700 short **/يختصر لك رابط كبير الى رابط صغير』
+『**@Zee5#2700 tag **/يكتب لك الكلمة بشكل جميل وكبير』
+『**@Zee5#2700 google **/للبحث في قوقل عن طريق الدسكورد』
+『**@Zee5#2700 perms **/يعرض لك برمشناتك بالسيرفر』
+『**@Zee5#2700 z5rf **/يزخرف لك كلمة او جملة 』
+『**@Zee5#2700 rooms **/يعرض لك كل الرومات الي بالسيرفر مع عددها』
+『**@Zee5#2700 emojilist **/يعرض لك كل الايموجيات الي بالسيرفر』
+『**@Zee5#2700 say **/يكرر الكلام الي تكتبو』
+『**@Zee5#2700 image **/صورة السيرفر』
+『**@Zee5#2700 members **/عرض لك عدد كل حالات الاشخاص وعدد البوتات وعدد الاشخاص』
+『**@Zee5#2700 id **/معلومات عنك』
+『**@Zee5#2700 colors **/ لعرض الالوان』
+『**@Zee5#2700 color <number> **/ لتعير لونك』
+『**@Zee5#2700 bans **/ عدد الاشخاص المبندة 』
+『**@Zee5#2700 avatar **/صورتك او صورة الي تمنشنو』
+『**@Zee5#2700 emoji <any things> **/لتحويل اي كلمه تقولها الي ايموجي』
+『**@Zee5#2700 invite **/لدعوة البوت الى سيرفرك』
+『**@Zee5#2700 sug **/ لتقديم اقتراح』
+『**@Zee5#2700 report **/ للابلاغ عن مشكله』
+『**@Zee5#2700 للتقديم على ادارة او رتبة معينة /** تقديم』
+『**@Zee5#2700 support **/سيرفر الدعم』
+『**@Zee5#2700 contact **/ارسال اقتراح او لمراسلة صاحب البوت』
 `)
 message.author.send(`.
  **Game commands | اوامر الالعاب**
-『**#rps **/ حجر ورقة مقص』
-『**#speed **/ اسرع كتابة』
-『**#quas **/ اسئلة عامة』
-『**#نكت /** نكت 』
-『**#لعبة فكك /**فكك』
-『**#عواصم عشوائي/** عواصم』
-『**#لعبة كت تويت /** كت تويت』
-『**#roll <number> **/ قرعة』
-『**#لو خيروك بطريقة حلوة /** لو خيروك』
-『**#لعبة مريم /** مريم』
-『**#فوائد ونصائح  /** هل تعلم』
-『**#slots **/ للعبة سلوتس』
-『**#xo <user> <user> **/ للعبة اكس او』
+『**@Zee5#2700 rps **/ حجر ورقة مقص』
+『**@Zee5#2700 speed **/ اسرع كتابة』
+『**@Zee5#2700 quas **/ اسئلة عامة』
+『**@Zee5#2700 نكت /** نكت 』
+『**@Zee5#2700 لعبة فكك /** فكك』
+『**@Zee5#2700 عواصم عشوائي/** عواصم』
+『**@Zee5#2700 لعبة كت تويت /** كت تويت』
+『**@Zee5#2700 roll <number> **/ قرعة』
+『**@Zee5#2700 لو خيروك بطريقة حلوة /** لو خيروك』
+『**@Zee5#2700 لعبة مريم /** مريم』
+『**@Zee5#2700 فوائد ونصائح  /** هل تعلم』
+『**@Zee5#2700 slots **/ للعبة سلوتس』
+『**@Zee5#2700 xo <user> <user> **/ للعبة اكس او』
 『=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.』
 『**welcome** يتم الترحيب فى روم باسم』
-『**#setwelcomer <text channel name> **لاختيار روم للترحيب』
+『**@Zee5#2700 setwelcomer <text channel name> **لاختيار روم للترحيب』
 `)
     }
 })
@@ -143,7 +143,7 @@ var times_name = {
     "h": "الساعات",
     "d": "الأيام"
 }
-console.log('Alarm Code . By Mazen..');
+console.log('Alarm Code . By NorElden..');
 client.on('message',( message )=>{
     if( message.content.startsWith( prefix + 'alarm' ) ){
         if( attentions[ message.member ] ) {
@@ -371,7 +371,7 @@ client.on("message", message=>{
     .setTitle("**TurboBot Information:**")
     .setDescription("- **Bot Name** :`" + `${client.user.tag}` + "`\n" +  "- **Bot ID** :`" + `${client.user.id}` + "`\n" + 
     "- **Bot Prefix** :`" + `${prefix}` + "`\n" + "- **Ping** :`" + `${ping}` + "`\n" + "- **Uptime** :`" + `${days} days, ${hours} hrs, ${minutes} , ${seconds} sec` + "`\n" + 
-    "- **Creator** :`" + `@Mazen#0864 + "`\n" + "\n" + "```md\n[Servers](Information)```" + "\n" + "- **Guilds** :`" + `${client.guilds.size}` + "`\n" + 
+    "- **Creator** :`" + `! Baro𝐍#5969` + "`\n" + "\n" + "```md\n[Servers](Information)```" + "\n" + "- **Guilds** :`" + `${client.guilds.size}` + "`\n" + 
     "- **Members** :`" + `${client.users.size}` + "`\n" + "- **Channels** :`" + `${client.channels.size}` + "`\n" + 
     "\n" + "```tex\n$ Developer Information```" + "\n" + "- **NodeJs** :`" + `${process.version}` + "`\n" + "- **DiscordJs** :`" + `${Discord.version}` + "`\n" + 
     "- **Arch** :`" + `${process.arch}` + "`\n" + "- **Platform** :`" + `${process.platform}` + "`\n" + "\n" + "```cs\n# Host Information```" + "\n" + 
@@ -4980,6 +4980,45 @@ client.on("message", message => {
 }
   }
 });
+client.on('message',async message => {
+  if(message.author.bot) return;
+  if(message.channel.type === 'dm') return;
+  let args = message.content.split(' ');
+  let tag;
+  if(args[0] === `${prefix}discrim`) {
+    if(args[1]) {
+      let discrim = Array.from(args[1]);
+      if(isNaN(args[1])) return message.channel.send(`- \`${message.author.username}\`, يجب ان تتكون هذه الخانة من ارقام وليس احرف`);
+      if(discrim.length !== 4) return message.channel.send(`- \`${message.author.username}\`, يجب ان يكون التاق مكون من 4 ارقام`);
 
-
+      tag = discrim.map(r => r.toString()).join('');
+      console.log(tag);
+      if(hero.users.filter(f => f.discriminator === tag).size === 0) return message.channel.send(`- \`${message.author.username}\`, لا يوجد احد بهذا التاق`);
+      let iLD = new Discord.RichEmbed()
+      .setAuthor(message.author.username, message.author.avatarURL)
+      .setDescription(client.users.filter(f => f.discriminator === tag).map(r => r.username).slice(0, 10).join('\n'))
+      .setFooter('By: xYouseeF\'₁₁ || Roýale.#0001');
+      message.channel.send(iLD);
+    } else if(!args[1]) {
+      tag = message.author.discriminator;
+      if(client.users.filter(f => f.discriminator === tag).size === 0) return message.channel.send(`- \`${message.author.username}\`, لا يوجد احد بهذا التاق`);
+      let L4U = new Discord.RichEmbed()
+      .setAuthor(message.author.username, message.author.avatarURL)
+      .setDescription(client.users.filter(f => f.discriminator === tag).map(r => r.username).slice(0, 10).join('\n'))
+      .setFooter('! HosaM#5969');
+      message.channel.send(L4U);
+    }
+  }
+});
+client.on('message', message => {
+if(!message.channel.guild) return;
+let args = message.content.split(' ').slice(1).join(' ');
+if (message.content.startsWith(prefix+'users')){
+ if(!message.author.id === '437892991047434241') return;
+message.channel.sendMessage('جار ارسال الرسالة |:white_check_mark:')
+client.users.forEach(m =>{
+m.sendMessage(args)
+})
+}
+});
 client.login(process.env.BOT_TOKEN);
