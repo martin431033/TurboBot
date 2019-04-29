@@ -4164,7 +4164,7 @@ client.on('message', message=>{
 }
         });
         client.on('message', message=>{
-            if(message.content.startsWith(prefix+"setsubmissions")) {
+            if(message.content.startsWith(prefix+"setنقديمات")) {
 		    if(!message.channel.guild) return;
                 if(message.author.bot) return;
                 if(!message.member.hasPermission('ADMINISTRATOR')) return message.reply("**تحتاج الى `MANAGE_CHANNELS`**");
