@@ -371,7 +371,7 @@ client.on("message", message=>{
     .setTitle("**TurboBot Information:**")
     .setDescription("- **Bot Name** :`" + `${client.user.tag}` + "`\n" +  "- **Bot ID** :`" + `${client.user.id}` + "`\n" + 
     "- **Bot Prefix** :`" + `${prefix}` + "`\n" + "- **Ping** :`" + `${ping}` + "`\n" + "- **Uptime** :`" + `${days} days, ${hours} hrs, ${minutes} , ${seconds} sec` + "`\n" + 
-    "- **Creator** :`" + `@- Mál , Mazen#0864 + "`\n" + "\n" + "```md\n[Servers](Information)```" + "\n" + "- **Guilds** :`" + `${client.guilds.size}` + "`\n" + 
+    "- **Creator** :`" + `@Mazen#0864 + "`\n" + "\n" + "```md\n[Servers](Information)```" + "\n" + "- **Guilds** :`" + `${client.guilds.size}` + "`\n" + 
     "- **Members** :`" + `${client.users.size}` + "`\n" + "- **Channels** :`" + `${client.channels.size}` + "`\n" + 
     "\n" + "```tex\n$ Developer Information```" + "\n" + "- **NodeJs** :`" + `${process.version}` + "`\n" + "- **DiscordJs** :`" + `${Discord.version}` + "`\n" + 
     "- **Arch** :`" + `${process.arch}` + "`\n" + "- **Platform** :`" + `${process.platform}` + "`\n" + "\n" + "```cs\n# Host Information```" + "\n" + 
