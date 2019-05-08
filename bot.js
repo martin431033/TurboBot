@@ -36,7 +36,7 @@ var ti={}
 
 client.on('ready', function(){
     var ms = 60000 ;
-    var setGame = [`${client.guilds.size} Server`,'#help','Type @Zee5#2700 help',`${client.users.size} Members`,'#invite','By: Mazen'];
+    var setGame = [`${client.guilds.size} Server`,'`${client.users.size} Members`,'#invite','By:! Republic'];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -61,16 +61,14 @@ client.on('ready', function(){
 client.on("message", message=>{
     if(message.content.startsWith(prefix+'help')) {
         message.author.send(`
-╭━━━━╮╱╱╱╭╮╱╱╱╱╭━━╮╱╱╱╭╮
-┃╭╮╭╮┃╱╱╱┃┃╱╱╱╱┃╭╮┃╱╱╭╯╰╮
-╰╯┃┃┣┫╭┳━┫╰━┳━━┫╰╯╰┳━┻╮╭╯
-╱╱┃┃┃┃┃┃╭┫╭╮┃╭╮┃╭━╮┃╭╮┃┃
-╱╱┃┃┃╰╯┃┃┃╰╯┃╰╯┃╰━╯┃╰╯┃╰╮
-╱╱╰╯╰━━┻╯╰━━┻━━┻━━━┻━━┻━╯
+⬇وصـف عـن الـبـوت⬇
+
+🎗فيه مميزات مش في اي بوبوت
+
+🚀بوت سريع
 **
-TurboBot. a multi purpose bot developed by ! Baro𝐍#5969.
-To see all the bot commands check our website | لرؤية جميع اوامر البوت الرجاء التوجه الى موقعنا:
- https://stoic-lovelace-e66071.netlify.com/ **
+System Rypublic. a multi purpose bot developed by ! Republic
+**
 .`)
 message.author.send(`
 **Public commands | الأوامر العامة**
