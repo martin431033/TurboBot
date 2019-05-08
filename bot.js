@@ -61,16 +61,7 @@ client.on('ready', function(){
 client.on("message", message=>{
     if(message.content.startsWith(prefix+'help')) {
         message.author.send(`
-⬇وصـف عـن الـبـوت⬇
 
-🎗فيه مميزات مش في اي بوبوت
-
-🚀بوت سريع
-**
-System Rypublic. a multi purpose bot developed by ! Republic
-**
-.`)
-message.author.send(`
 **Public commands | الأوامر العامة**
 『**#bots **/لعرض جميع البوتات الي بالسيرفر』
 『**#serverinfo** /يعرض لك معلومات عن السيرفر』
@@ -122,7 +113,7 @@ message.author.send(`.
 『=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.』
 『**welcome** يتم الترحيب فى روم باسم』
 『**#setwelcomer <text channel name> **لاختيار روم للترحيب』
-`)
+.`)
     }
 })
 var attentions = {};
